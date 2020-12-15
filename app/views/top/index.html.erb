@@ -11,12 +11,14 @@
         </div>
         <div class="cardWrapper">
           <% task.cards.each do |card| %>
-            <div class="card">
-              <h3 class="card_title"><%= card.title %></h3>
-              <% if card.memo.size > 0 %>
-                <div class="card_detail is-exist"><i class="fas fa-bars"></i></div>
-              <% end %>
-            </div>
+            <%= link_to task_card_path(task, card), class: "cardDetail_link" do %>
+              <div class="card">
+                <h3 class="card_title"><%= card.title %></h3>
+                <% if card.memo.size > 0 %>
+                  <div class="card_detail is-exist"><i class="fas fa-bars"></i></div>
+                <% end %>
+              </div>
+            <% end %>
           <% end %>
           <div class="addCard">
             <i class="far fa-push-square"></i>

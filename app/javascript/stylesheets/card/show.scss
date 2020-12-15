@@ -1,0 +1,43 @@
+.cardContents {
+  margin: 60px auto 0;
+  max-width: 600px;
+}
+
+.cardContents_title {
+  font-size: 22px;
+}
+
+.cardContents_title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.cardContents_memo {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.cardContents_taskStatus {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.cardContents_btnArea {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.edit_btn {
+  max-width: 200px;
+  margin: 0 auto;
+  background: #026aa7;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+
+.edit_btn:hover {
+  opacity: 0.7;
+}
