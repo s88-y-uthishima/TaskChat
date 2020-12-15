@@ -62,12 +62,12 @@ a {
   margin-top: 20px;
   padding: 10px;
   border-radius: 90px;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   cursor: pointer;
 }
 
 .submitBtn:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 //sign_up
@@ -94,3 +94,31 @@ a {
 //     color: #0075c1;
 //   }
 // }
+
+// sign_in
+.signinPage {
+  margin-top: 10vh;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+.loginBtn {
+  padding: 12px;
+  width: 200px;
+  border-radius: 21px;
+  background: #29b744;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  opacity: 1;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  opacity: 0.7;
+}
