@@ -1,3 +1,15 @@
-<p>このページは仮のトップページです。</p>
-
-<%= link_to "仮のボタンです", "#", class: "btn btn-primary" %>
+<div class="topPage">
+  <div class="taskWrapper">
+    <% @tasks.each do |task| %>
+      <div class="task">
+        <div class="task_header">
+          <h2 class="task_header_title"><%= task.title %></h2>
+          <div class="task_header_action">
+            <%= link_to(content_tag(:i,'', class: 'fas fa-pen'), edit_task_path(task))%>
+            <%= link_to(content_tag(:i,'', class: 'fas fa-trash'), task_path(task), method: :delete, data: { confirm: "#{task.title}を削除して大丈夫ですか？" }) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

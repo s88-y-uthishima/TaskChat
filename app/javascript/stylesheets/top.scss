@@ -1,0 +1,47 @@
+.topPage {
+  min-height: 93vh;
+  padding-top: 30px;
+  background: #bababa;
+  overflow-x: scroll;
+}
+
+.taskWrapper {
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.task {
+  position: relative;
+  background: #e2e4e6;
+  padding: 10px;
+  margin-left: 20px;
+  min-width: 250px;
+}
+
+.task:last-child {
+  margin-right: 20px;
+}
+
+.task_header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task_header_title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.fa-pen {
+  font-size: 18px;
+  color: #8c8c8c;
+}
+
+.fa-trash {
+  font-size: 18px;
+  color: #8c8c8c;
+  margin-right: 10px;
+}
