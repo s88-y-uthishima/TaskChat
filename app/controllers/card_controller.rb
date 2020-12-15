@@ -30,7 +30,8 @@ class CardController < ApplicationController
   end
 
   def destroy
-    
+    @card.destroy
+    redirect_to :root
   end
 
   private
