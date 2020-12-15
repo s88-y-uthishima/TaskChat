@@ -7,30 +7,11 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="header_menu">
-          <li class="nav-link">〇〇さん</li>
-          <li class="header_menu_title"><%= link_to "Task Chat", root_path, class: "nav-link" %></li>
-          <li>
-            <ul class="header_menu_inner">
-              <li>
-                <%= link_to "#", class: "nav_link" do %>
-                  <span class="mr-1">リストを作成</span>
-                  <i class="fas fa-edit"></i>
-                <% end %>
-              </li>
-              <li><%= link_to "サインアウト", "#", class: "nav-link" %></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <%= render 'partial/header' if current_user %>
     
     <%= yield %>
   </body>
