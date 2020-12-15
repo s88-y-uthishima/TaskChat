@@ -5,13 +5,13 @@
   overflow-x: scroll;
 }
 
-.listWrapper {
+.taskWrapper {
   height: 100%;
   display: flex;
   align-items: baseline;
 }
 
-.list {
+.task {
   position: relative;
   background: #e2e4e6;
   padding: 10px;
@@ -19,18 +19,24 @@
   min-width: 250px;
 }
 
-.list:last-child {
+.task:last-child {
   margin-right: 20px;
 }
 
-.list_header {
+.task_header {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.list_title {
+.task_header_title {
   font-size: 20px;
   margin: 0;
+}
+
+.fa-pen, .fa-trash {
+  font-size: 18px;
+  color: #8c8c8c;
+
 }
