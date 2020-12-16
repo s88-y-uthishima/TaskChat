@@ -19,6 +19,7 @@ class CardController < ApplicationController
   end
 
   def edit
+    @tasks = Task.where(user: current_user)
   end
 
   def update
