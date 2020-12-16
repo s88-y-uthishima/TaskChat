@@ -1,20 +1,32 @@
 .topPage {
   min-height: 93vh;
-  padding-top: 30px;
-  background: #bababa;
+  // padding-top: 30px;
   overflow-x: scroll;
+  display: flex;
 }
 
 .taskWrapper {
-  height: 100%;
+  width: calc( 100vw - 30% );
+  height: 100vh;
+  background: #bababa;
   display: flex;
   align-items: baseline;
+}
+
+.chatWrapper {
+  background: #434344;
+  width: 30%;
+  & h1 {
+    text-align: center;
+    color: #fff; 
+  }
 }
 
 .task {
   position: relative;
   background: #e2e4e6;
   padding: 10px;
+  margin-top: 20px;
   margin-left: 20px;
   min-width: 250px;
 }
