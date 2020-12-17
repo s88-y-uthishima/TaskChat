@@ -14,11 +14,14 @@
 }
 
 .chatWrapper {
-  background: #434344;
+  background: #fce890;
   width: 30%;
   & h1 {
     text-align: center;
-    color: #fff; 
+    color: #272727; 
+  }
+  .message {
+    margin-left: 20px;
   }
 }
 
