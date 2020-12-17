@@ -11,8 +11,10 @@
   </head>
 
   <body>
+  <div class="wrap">
     <%= render 'partial/header' if current_user %>
     <%= yield %>
-    <%= render 'partial/footer' if current_user %>
+    <footer></footer>
+    </div>
   </body>
 </html>
