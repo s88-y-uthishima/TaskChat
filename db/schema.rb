@@ -30,11 +30,9 @@ ActiveRecord::Schema.define(version: 2020_12_16_081049) do
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "message", default: "", null: false
-    t.bigint "user_id", null: false
+    t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -60,6 +58,5 @@ ActiveRecord::Schema.define(version: 2020_12_16_081049) do
 
   add_foreign_key "cards", "tasks"
   add_foreign_key "chats", "users"
-  add_foreign_key "messages", "users"
   add_foreign_key "tasks", "users"
 end

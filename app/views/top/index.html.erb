@@ -30,10 +30,10 @@
   </div>
   <div class="chatWrapper">
     <h1>Chat Area</h1>
-    <ul>
-      <% @messages.each do |message| %>
-        <li><%= message.content %></li>
-      <% end %>
-    </ul>
+    <div id='messages'>
+      <%= render @messages %>
+    </div>
+    <%= label_tag :content, 'Say something:' %>
+    <%= text_field_tag :content, nil, data: { behavior: 'room_speaker' } %>
   </div>
 </div>
