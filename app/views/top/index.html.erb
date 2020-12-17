@@ -13,7 +13,7 @@
           <% task.cards.each do |card| %>
             <%= link_to task_card_path(task, card), class: "cardDetail_link" do %>
               <div class="card">
-                <h3 class="card_title"><%= card.title %></h3>
+                <h3 class="card_title"><%= card.title %> 様</h3>
                 <% if card.memo.size > 0 %>
                   <div class="card_detail is-exist"><i class="fas fa-bars"></i></div>
                 <% end %>
@@ -22,7 +22,7 @@
           <% end %>
           <div class="addCard">
             <i class="far fa-push-square"></i>
-            <%= link_to "更にカードを追加", new_task_card_path(task), class: "addCard_link" %>
+            <%= link_to "カードを追加", new_task_card_path(task), class: "addCard_link" %>
           </div>
         </div>
       </div>
@@ -33,5 +33,13 @@
     <div id='messages'>
       <%= render @messages %>
     </div>
+  </div>
+</div>
+<div class="form">
+  <div>
+    <%= text_field_tag :content, nil, data: { behavior: 'room_speaker' }, class: "form-input" %>
+  </div>
+  <div class=" form-message">
+    <%= label_tag :content, '入力後Enterを押してください' %>
   </div>
 </div>
