@@ -122,3 +122,31 @@ a {
 .loginBtn:hover {
   opacity: 0.7;
 }
+
+.form {
+  width: 100vw;
+  background: #b7ec8c;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  width:250px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 10px;
+  margin: auto 0;
+  font-size: 18px;
+}
