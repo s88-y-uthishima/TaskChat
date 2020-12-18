@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+
 body {
   overflow: visible;
+  // padding: 60px 0 60px;
 }
 
 .notice, .alert {
@@ -8,8 +19,18 @@ body {
 
 //header
 header {
+  width: 100vw;
   background: #b7ec8c;
   padding: 10px;
+}
+
+footer {
+  width: 100vw;
+  background: #b7ec8c;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
 }
 
 .header_menu {
