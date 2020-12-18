@@ -1,21 +1,26 @@
 .topPage {
+  background: #bababa;
+  width: 100%;
   min-height: 93vh;
-  // padding-top: 30px;
   overflow-x: scroll;
   display: flex;
 }
 
 .taskWrapper {
   width: calc( 100vw - 30% );
-  height: 100vh;
+  height: 660px;
   background: #bababa;
   display: flex;
   align-items: baseline;
+  overflow-y: auto;
+  white-space: nowrap;
 }
 
 .chatWrapper {
   background: #fce890;
   width: 30%;
+  overflow: auto;
+  height: 660px;
   & h1 {
     text-align: center;
     color: #272727; 
@@ -29,8 +34,7 @@
   position: relative;
   background: #e2e4e6;
   padding: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px;
   min-width: 250px;
 }
 
@@ -92,10 +96,6 @@
 .fas-bars {
     display: block;
   }
-
-
-
-
 
 .addCard {
   color: #8c8c8c;
